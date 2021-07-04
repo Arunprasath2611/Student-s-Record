@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="./style1.css">
+    </head>
+    <body>
+        <div class="login-form">
+            <h1>LOGIN</h1>
+            <form action="home.html" method="POST" name="form" onsubmit="return validated()">
+
+                <input autocomplete="off" type="text" name="email" placeholder="Enter Your Email or Phone Number">
+            <div id="email_error">Length of 8 characters</div>
+
+                <input type="password" name="password" placeholder="Enter Your Password">
+            <div id="pass_error">Must contain atleast 8 characters</div>
+                     
+                <button type="submit">Login</button>
+
+            <br><br>
+            <a href="register.html">REGISTER HERE !!!</a>
+                
+            </form>
+        </div>
+        <script src="validate.js"></script>
+    </body>
+</html>
